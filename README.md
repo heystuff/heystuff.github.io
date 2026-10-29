@@ -14,7 +14,7 @@
 - `interactive.html` | scenario activity
 - `action.html` | advocacy and service-learning page
 - `style.css` | **all shared styles and color palette**
-- `scenarios.js` | the three scenarios and interaction logic
+- `scenarios.js` | 10 conversation scenarios, each with three responses and feedback, plus the interaction logic
 - `favicon.svg` | shared speech-bubble favicon for every page
 
 ## Edit colors
@@ -23,7 +23,7 @@ Open `style.css`. All color hex values and `rgba()` definitions are in the `:roo
 
 ## Add a scenario
 
-Open `scenarios.js` and locate `const scenarios = [`. Copy a full `{ intro, friendMessage, choices: [...] }` entry, place it before the ending `];`, and **put a comma after the previous scenario object**. The controls and counter update automatically. Each choice should have `text`, `heading`, `explanation` and a `tone` of `positive` or `reflect`.
+Open `scenarios.js` and locate `const scenarios = [`. Copy a full `{ intro, friendMessage, choices: [...] }` entry, place it before the ending `];`, and **put a comma after the previous scenario object**. The controls and counter update automatically. Each choice should have `text`, `heading`, `explanation` and a `tone` of `positive` or `reflect`. Keep three choices per scenario, vary the position of the supportive response, and update the total in the homepage description, the Interactive page's description and initial counters, and this file when adding scenarios.
 
 ## Before Kevin submits
 
