@@ -1,57 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Practice supportive responses in three interactive school scenarios.">
+  <meta name="description" content="Three interactive conversation scenarios about mental health stigma and empathy.">
   <title>Interactive | What Would You Say?</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" sizes="any">
   <link rel="stylesheet" href="style.css">
   <script src="scenarios.js" defer></script>
 </head>
 <body>
-<header class="topbar"><nav aria-label="Main navigation" class="nav shell">
-<a aria-label="What Would You Say, home" class="brand" href="index.html"><span aria-hidden="true" class="brand-mark">
-<svg fill="none" height="23" viewbox="0 0 24 24" width="23"><path d="M5 7.5c0-2 1.7-3.5 3.6-3.5h7c2 0 3.4 1.5 3.4 3.5v6.2c0 2-1.5 3.5-3.4 3.5h-4.1L7 20v-2.8c-1.3-.5-2-1.8-2-3.5V7.5Z" stroke-linejoin="round" stroke-width="1.8"></path><path d="M9 10.7h6" stroke-linecap="round" stroke-width="1.8"></path></svg></span>
-what would you say<span class="brand-accent">?</span></a>
-<div class="nav-links">
-<a href="index.html">The idea</a>
-<a href="research.html">The Research</a>
-<a aria-current="page" href="interactive.html">Interactive</a>
-<a href="action.html">Take action</a>
-</div></nav></header>
-<main id="top"><section class="page-intro"><div class="shell"><span class="intro-pill">The interactive</span><h1>Small words. Big difference.</h1><p>Choose how to respond when a friend opens up. Each choice reveals why it may or may not help. There are no scores or accounts, and your answers are not recorded.</p></div></section><section aria-labelledby="experience-title" class="scenario-wrap scenario-wrap--page" id="experience">
-<div class="shell">
-<div class="scenario-panel">
-<div class="scenario-header">
-<div class="eyebrow">Practice / Interactive</div>
-<span aria-live="polite" class="scenario-status" id="scenario-status">SCENARIO 01 · 1 OF 3</span>
-</div>
-<div class="scenario-grid">
-<div>
-<h2 class="scenario-title" id="experience-title">What would <em class="scenario-highlight">you</em> say?</h2>
-<p class="scenario-copy" id="scenario-copy">A friend tells you they're having a hard time. Choose how you might respond.</p>
-<div class="friend-message">
-<div class="friend-label"><span class="friend-avatar">A</span> A MESSAGE FROM A FRIEND</div>
-<span id="friend-message-text">“I've been worrying about school so much that I can't sleep. I'm not sure whether I should tell anyone.”</span>
-</div>
-</div>
-<div>
-<div class="choices-label">PICK THE RESPONSE YOU THINK WOULD HELP MOST:</div>
-<div aria-label="Choose how to respond to your friend" class="choices" id="choices" role="group"></div>
-<div aria-atomic="true" aria-live="polite" class="feedback" id="feedback" role="status">
-<div class="feedback-title">← Your turn</div>
-<p>Choose a response above to reveal a short explanation. Try more than one choice to compare.</p>
-</div>
-<div aria-label="Scenario navigation" class="scenario-controls">
-<button class="scenario-nav-button" disabled="" id="previous-scenario" type="button">← Previous</button>
-<span class="scenario-progress" id="scenario-progress">1 / 3</span>
-<button class="scenario-nav-button" id="next-scenario" type="button">Next scenario →</button>
-</div>
-</div>
-</div>
-<p class="scenario-disclaimer">This is practice in supportive communication, not a medical assessment. If a friend is in immediate danger, tell a trusted adult or contact emergency help. You can support someone without handling the situation alone.</p>
-</div>
-</div>
-</section><section class="page-endnote"><div class="shell"><p><strong>After the activity:</strong> Reflect on one response you might use in real life. When support is needed, consider involving a school counselor, parent, teacher, or another trusted adult.</p><a class="button button-light" href="action.html">Find out how to take action ↗</a></div></section></main>
-<footer><div class="shell footer-inner"><div><strong>what would you say?</strong><p>Student-led project about stigma, listening, and asking for support.<br/>This activity is educational, not a diagnosis or professional advice.</p></div><span class="footer-badge">LISTEN FIRST · RESPOND WITH CARE</span></div></footer>
-</body></html>
+<header class="topbar"><nav class="nav shell" aria-label="Main navigation"><a class="brand" href="index.html" aria-label="What Would You Say? | Home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" focusable="false"><path d="M5 7.5c0-2 1.7-3.5 3.6-3.5h7c2 0 3.4 1.5 3.4 3.5v6.2c0 2-1.5 3.5-3.4 3.5h-4.1L7 20v-2.8c-1.3-.5-2-1.8-2-3.5V7.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 10.7h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span>what would you say<span class="brand-accent">?</span></span></a><div class="nav-links"><a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="interactive.html" aria-current="page">Interactive</a>
+<a href="action.html">Take action</a></div></nav></header>
+<main id="top">
+<section class="page-hero shell"><span class="pill">The interactive</span><h1>Small words. <span>Big difference.</span></h1><p>In each scenario, a friend opens up. Choose a response to see why it might help|or why it might make things harder. You can try every answer. Nothing is saved or submitted.</p></section>
+<section class="activity"><div class="shell"><div class="activity-panel">
+  <div class="activity-top"><div class="eyebrow">Practice / What would you say?</div><span class="activity-count" id="scenario-status" aria-live="polite">Scenario 1 of 3</span></div>
+  <div class="activity-grid">
+    <div><h2>What would <em>you</em> say?</h2><p class="activity-intro" id="scenario-copy">A friend wants to talk about something difficult.</p><div class="friend-message"><div class="friend-label">A MESSAGE FROM A FRIEND</div><div class="friend-quote" id="friend-message-text">Loading scenario...</div></div></div>
+    <div><div class="choice-prompt">Choose the response you think would help most:</div><div class="choices" id="choices" role="group" aria-label="Choose a response"></div><div class="feedback" id="feedback" role="status" aria-live="polite" aria-atomic="true"><div class="feedback-title">Your turn</div><p>Select an option to see an explanation.</p></div><div class="activity-controls"><button type="button" id="previous-scenario" disabled>Previous</button><span id="scenario-progress">1 / 3</span><button type="button" id="next-scenario">Next scenario</button></div></div>
+  </div>
+  <p class="activity-note">This activity teaches supportive communication. It does not diagnose a mental health condition or replace a counselor or health professional. If someone is in immediate danger, contact a trusted adult and emergency services.</p>
+</div></div></section>
+<section class="banner"><div class="shell banner-inner"><div><div class="eyebrow">After the activity</div><h2>One kind response can be a starting point.</h2><p>Think of a supportive phrase you could use in a real conversation. Then explore practical ways to take action.</p></div><a class="button button-primary" href="action.html">Take action<span class="button-chevron" aria-hidden="true"></span></a></div></section>
+</main>
+<footer class="footer"><div class="shell footer-inner"><div><strong>what would you say?</strong><p>A student-led project about reducing stigma around anxiety and seeking support.<br>This website is educational, not a diagnosis or a replacement for professional care.</p></div><span class="footer-tag">LISTEN FIRST. RESPOND WITH CARE.</span></div></footer>
+</body>
+</html>

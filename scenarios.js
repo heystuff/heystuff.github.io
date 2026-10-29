@@ -1,21 +1,4 @@
-/* ===========================================================
-       KEVIN: EDIT THIS ARRAY TO ADD
-       OR CHANGE SCENARIOS.
-
-       Each object inside the scenarios array is ONE scenario.
-       To add a fourth:
-       1. Copy the entire last { ... } scenario object.
-       2. Paste it BEFORE the closing ]; of the array.
-       3. Put a comma between the two objects.
-       4. Change the intro, friendMessage and three choices.
-       5. Save the file and refresh the browser.
-
-       Do not copy more HTML buttons: the JavaScript makes them.
-       This is a sequential activity, not a branching story.
-       =========================================================== */
-
     const scenarios = [
-      // ─── SCENARIO 1: ORIGINAL EXAMPLE ──────────────────────────
       {
         intro: "A friend opens up about school-related worry and isn't sure whether to talk to anyone.",
         friendMessage: "I've been worrying about school so much that I can't sleep. I'm not sure whether I should tell anyone.",
@@ -41,7 +24,6 @@
         ]
       },
 
-      // ─── SCENARIO 2: EXAMPLE TO REWRITE ────────────────────────
       {
         intro: "A friend worries that asking the school counselor for help will make them look weak.",
         friendMessage: "I want to talk to the counselor, but I'm worried everyone will think I'm weak.",
@@ -67,7 +49,6 @@
         ]
       },
 
-      // ─── SCENARIO 3: EXAMPLE TO REWRITE ────────────────────────
       {
         intro: "A classmate is mocked after saying they sometimes feel anxious.",
         friendMessage: "Someone called me 'dramatic' after I told them I get anxious. Maybe I shouldn't have said anything.",
@@ -92,12 +73,8 @@
           }
         ]
       }
-
-      // TO ADD #4, PLACE A COMMA AFTER THE '}' ABOVE, THEN COPY AN
-      // ENTIRE SCENARIO OBJECT (including all three choices) HERE.
     ];
 
-    // ─── DISPLAY LOGIC: NO NEED TO EDIT BELOW THIS LINE ─────────
     let currentScenarioIndex = 0;
     const scenarioStatus = document.getElementById('scenario-status');
     const introElement = document.getElementById('scenario-copy');
@@ -111,12 +88,11 @@
     function renderScenario() {
       const scenario = scenarios[currentScenarioIndex];
       const number = currentScenarioIndex + 1;
-      scenarioStatus.textContent = `SCENARIO ${String(number).padStart(2, '0')} · ${number} OF ${scenarios.length}`;
+      scenarioStatus.textContent = `SCENARIO ${String(number).padStart(2, '0')} | ${number} OF ${scenarios.length}`;
       progressElement.textContent = `${number} / ${scenarios.length}`;
       introElement.textContent = scenario.intro;
       messageElement.textContent = `“${scenario.friendMessage}”`;
 
-      // Erase old choices and create the current scenario's choices.
       choicesElement.replaceChildren();
       scenario.choices.forEach((choice, index) => {
         const button = document.createElement('button');
@@ -126,7 +102,7 @@
 
         const letter = document.createElement('span');
         letter.className = 'choice-letter';
-        letter.textContent = String.fromCharCode(65 + index); // A, B, C...
+        letter.textContent = String.fromCharCode(65 + index);
 
         const choiceText = document.createElement('span');
         choiceText.className = 'choice-text';
@@ -135,7 +111,7 @@
         const arrow = document.createElement('span');
         arrow.className = 'choice-arrow';
         arrow.setAttribute('aria-hidden', 'true');
-        arrow.textContent = '↗';
+        arrow.textContent = '';
 
         button.append(letter, choiceText, arrow);
         button.addEventListener('click', () => {
@@ -158,14 +134,15 @@
       feedbackElement.replaceChildren();
       const heading = document.createElement('div');
       heading.className = 'feedback-title';
-      heading.textContent = '← Your turn';
+      heading.textContent = 'Your turn';
       const paragraph = document.createElement('p');
       paragraph.textContent = 'Choose a response to see why it may or may not help.';
       feedbackElement.append(heading, paragraph);
 
       previousButton.disabled = currentScenarioIndex === 0;
       nextButton.textContent = currentScenarioIndex === scenarios.length - 1
-        ? 'Start over ↻' : 'Next scenario →';
+        ? 'Start over' : 'Next scenario';
+      nextButton.classList.toggle('is-restart', currentScenarioIndex === scenarios.length - 1);
     }
 
     previousButton.addEventListener('click', () => {
