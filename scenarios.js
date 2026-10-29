@@ -6,7 +6,7 @@
           {
             text: "Everyone gets stressed. You're overthinking it.",
             heading: "Consider how that might sound",
-            explanation: "This response might make a friend feel that their concerns are being dismissed. Instead, try acknowledging what they said and asking how you can support them.",
+            explanation: "This response could make a friend feel that their concerns are being dismissed. Instead, try recognizing what they said and asking how you can support them.",
             tone: "reflect"
           },
           {
@@ -37,7 +37,7 @@
           {
             text: "Asking for support isn't weak. I can go with you if that helps.",
             heading: "Support without pressure",
-            explanation: "This challenges stigma, gives reassurance, and offers a practical way to help without taking over the decision.",
+            explanation: "This challenges stigma, gives reassurance, and offers a way to help without taking over the decision.",
             tone: "positive"
           },
           {
@@ -106,7 +106,7 @@
           {
             text: "If you trusted me, you would tell me what's wrong.",
             heading: "Sharing should be their choice",
-            explanation: "Making someone prove their trust puts pressure on them to share. You can show care while respecting that they are not ready to talk.",
+            explanation: "Making someone prove their trust puts pressure on them to share, partially defeating the purpose of helping them alleviate their stress. You can show care while respecting that they are not ready to talk.",
             tone: "reflect"
           },
           {
@@ -118,7 +118,7 @@
           {
             text: "That's okay. You don't have to explain. Would you like company, or should I check in another time?",
             heading: "Respect their pace",
-            explanation: "You respect their boundary and offer choices without asking for personal details. Being supportive can also mean spending time together or checking in later.",
+            explanation: "You respect their boundary and give choices without asking for personal details. Being supportive can also mean spending time together or checking in later.",
             tone: "positive"
           }
         ]
@@ -156,13 +156,13 @@
           {
             text: "You're right. You should focus on how lucky you are.",
             heading: "Comparison can miss what they need",
-            explanation: "Agreeing that their concerns are too small may discourage them from speaking up. Acknowledge what they are experiencing without comparing it with someone else's situation.",
+            explanation: "Agreeing that their concerns are too small may discourage them from speaking up even more. Recognize what they are experiencing without comparing it with someone else's situation.",
             tone: "reflect"
           },
           {
             text: "Let me tell you about my week. Mine has been much worse.",
             heading: "Keep the focus on listening",
-            explanation: "Sharing your own experience can sometimes help, but turning the conversation into a comparison may leave your friend feeling unheard. Give them space to finish first.",
+            explanation: "Sharing your own experience can sometimes help, but turning the conversation into a comparison may leave your friend feeling unheard, and shifting the conversation to you makes them feel left out. Give them space to finish first.",
             tone: "reflect"
           },
           {
@@ -181,7 +181,7 @@
           {
             text: "Send me everything. I'll do your assignments for you.",
             heading: "Help them take a step of their own",
-            explanation: "Taking over their work does not give your friend a chance to choose what would help. Offer to work alongside them or help them contact a teacher about the workload.",
+            explanation: "Taking over their work does not give your friend a chance to choose what would help, and won't allow them to improve by themselves via practice. Offer to work alongside them or help them contact a teacher about the workload.",
             tone: "reflect"
           },
           {
@@ -193,7 +193,7 @@
           {
             text: "Just make a schedule. It isn't that hard.",
             heading: "Advice needs understanding too",
-            explanation: "A schedule might be useful, but saying it is easy can minimize the difficulty your friend described. Ask what is getting in the way before suggesting a plan.",
+            explanation: "A schedule might be useful, but saying it is easy can minimize the difficulty your friend described. They might have trouble following a schedule, and have already tried it out. Ask what is getting in the way before suggesting a plan.",
             tone: "reflect"
           }
         ]
